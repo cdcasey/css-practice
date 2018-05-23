@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+}
+
+header, footer {
+  background-color: #666;
+  color: whitesmoke;
+  height: 75px;
+}
+
+nav {
+  background-color: #999;
+  color: whitesmoke;
+  min-width: 20%;
+  /* flex: 1; */
+}
+
+main {
+  background-color: whitesmoke;
+  height: 600px;
+  flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* width: 60px; */
+}
+
+li {
+  display: block;
+}
+
+@media (max-width: 599px) {
+  .container {
+    display: block;
+  }
+  nav {
+    max-width: 599px;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
